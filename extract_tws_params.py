@@ -193,8 +193,8 @@ else:
     
 DB_OUT = process_db_package(tws_db_cfg, temp_dir);
 #print DB_OUT;
-
-FULL_PARAMS.update(DB_OUT); ## Merging all the elements to a single Dictionary
+if DB_OUT:
+  FULL_PARAMS.update(DB_OUT); ## Merging all the elements to a single Dictionary
 #print FULL_PARAMS;
 OUT_FileHandle.write(json.dumps(FULL_PARAMS, indent = 4)); ## Writing the contents to a json file
 OUT_FileHandle.write("\n");
