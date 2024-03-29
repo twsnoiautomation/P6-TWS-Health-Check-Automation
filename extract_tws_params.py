@@ -145,6 +145,7 @@ elif num_of_args == 2:
   tws_db_cfg = args[1];
 elif num_of_args > 2:
   print "Parameters passed are more than required. Exit";
+  sys.exit();
 else:
   my_tws_pkg = "";
   tws_db_cfg = "";
