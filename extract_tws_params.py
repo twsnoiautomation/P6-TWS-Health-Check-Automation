@@ -146,6 +146,7 @@ def get_tws_version(version_file):
         version_out["FixPack Level"] = str;
   else:
     print ("Unable to determine the version of IBM Workload Scheduler");
+  version_FH.close();
   return version_out;
 ####
 
