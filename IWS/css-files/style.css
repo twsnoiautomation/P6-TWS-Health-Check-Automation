@@ -1,0 +1,188 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css");
+
+@font-face {
+  font-family: ibm-plex;
+  src: url(/IWS/others/woff/IBMPlexSans-Regular.woff);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: ibm-plex;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  /* bottom: auto; */
+}
+
+/* adding css position property to main section */
+#mainSection {
+  position: absolute;
+  left: 300px;
+}
+
+li {
+  border-left: 5px solid #e7e9ec;
+}
+
+ul li:hover {
+  border-left: 5px solid #1d1d1ebf;
+  background-color: rgba(122, 118, 118, 0.09);
+}
+
+.nav-link {
+  font-weight: 400;
+  color: black;
+  font-size: 17px;
+  height: 50px;
+}
+
+ul li a:focus {
+  margin-left: -0.8px;
+  border-top: 2px solid #0f62fe;
+  border-right: 2px solid #0f62fe;
+  border-bottom: 2px solid #0f62fe;
+  border-left: 4px solid #0f62fe;
+}
+
+.down-arrow {
+  height: 25px;
+  width: 40px;
+  padding-bottom: 3px;
+  filter: invert(99%) sepia(0%) saturate(7497%) hue-rotate(67deg)
+    brightness(104%) contrast(100%);
+}
+
+.prevbt {
+  color: #0f62fe;
+  /* font-weight: 700; */
+}
+
+.prevbt:hover {
+  background-color: #0f62fe;
+  color: white;
+}
+
+.right-arrow {
+  height: 25px;
+  width: 45px;
+  filter: brightness(0) saturate(100%) invert(35%) sepia(92%) saturate(5235%)
+    hue-rotate(217deg) brightness(98%) contrast(108%);
+}
+
+/* Each section heading css property */
+
+#section-heading {
+  font-size: 56px;
+}
+
+/* hr tag css property */
+hr1 {
+  margin: 50px 0;
+  border: none;
+  height: 1px;
+  background-color: black; /* For modern browsers */
+}
+
+/* products hr tag css property */
+
+hr {
+  margin: 50px 0;
+  border: none;
+  height: 1.6px;
+  background-color: #333;
+}
+
+.benefits-cls > div {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.features-cls > div {
+  border: 1px solid black;
+  /* margin: 10px 0px; */
+  padding: 5px;
+}
+
+.product-navigation {
+  position: relative;
+  text-decoration: none;
+}
+
+.product-navigation:hover::after {
+  content: "";
+  position: absolute;
+  left: 4%;
+  right: 23%;
+  bottom: 12px;
+  border: 1px solid #0f62fe;
+  color: blue;
+}
+
+.bgColor:hover {
+  background-color: rgba(122, 118, 118, 0.09);
+}
+
+/* use cases css property */
+
+.usecases h4 {
+  font-size: 20px;
+  padding-bottom: 5px;
+  font-weight: 800;
+}
+
+.usecases div > div > div:hover {
+  background-color: rgba(122, 118, 118, 0.09);
+}
+
+.usecases p {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.productform {
+  display: none;
+}
+
+.productfileupload {
+  display: none;
+}
+
+.row .col-lg-8 {
+  border-width: thin;
+  border: 1.5px solid #aeacac;
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 10px 4px rgba(221, 213, 213, 0.49);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(221, 213, 213, 0.49);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(221, 213, 213, 0.49); */
+}
+
+.col-lg-6 > label,
+.col-lg-5 > label,
+.col-lg-12 > p,
+.col-lg-12 > label,
+.col-lg-7 > label {
+  font-weight: 700;
+}
+
+.section3Description p {
+  font-size: 13px;
+}
+
+.section3Description span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.card-body {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.card-body:hover {
+  /* border: 1px solid black; */
+  background-color: rgba(230, 226, 226, 0.563);
+}
